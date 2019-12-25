@@ -1,26 +1,48 @@
 PODS:
+  - Alamofire (4.9.1)
+  - Letters (2.1.1)
   - p2.OAuth2 (5.0.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
   - SDWebImage (5.4.0):
     - SDWebImage/Core (= 5.4.0)
   - SDWebImage/Core (5.4.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Letters
   - p2.OAuth2
+  - RxCocoa
+  - RxSwift
   - SDWebImage
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Letters
     - p2.OAuth2
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Letters: 34476b0d413813bcf9273b2760be7ff4cd75f5c7
   p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5b8dde6ed989545a746481f09e70328881105b39
+PODFILE CHECKSUM: e134bad72826604f06ac661f790dced646821baf
 
 COCOAPODS: 1.8.4

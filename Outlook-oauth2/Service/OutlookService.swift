@@ -152,4 +152,26 @@ class OutlookService {
             callback(result)
         }
     }
+    
+    func loadUserData(completion: @escaping (_ dataList:[Mail]) -> Void) {
+        self.getUserEmail() {
+            email in
+            if let unwrappedEmail = email {
+                NSLog("Mail: \(unwrappedEmail)")
+                var mails = [Mail]()
+                self.getInboxMessages() {
+                    messages in
+                    print(messages)
+                    if let unwrappedMessages = messages {
+                        for (message) in unwrappedMessages["value"].arrayValue {
+                            let mail = Mail(fromUser: FromUser(emailAddress: EmailAddress(name: message["from"]["emailAddress"]["name"].stringValue, address: message["from"]["emailAddress"]["address"].stringValue)), received: message["receivedDateTime"].stringValue, subject: message["subject"].stringValue, id: message["id"].stringValue)
+                            print(mail.subject!)
+                            mails.append(mail)
+                        }
+                        completion(mails)
+                    }
+                }
+            }
+        }
+    }
 }

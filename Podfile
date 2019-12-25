@@ -10,5 +10,9 @@ target 'Outlook-oauth2' do
 pod 'SDWebImage'
 pod 'p2.OAuth2'
 pod 'SwiftyJSON'
+pod 'Alamofire'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'Letters'
 
 end

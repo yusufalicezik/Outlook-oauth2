@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		48B60D5923B3D2040026DDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B60D5823B3D2040026DDF7 /* AppDelegate.swift */; };
 		48B60D5B23B3D2040026DDF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B60D5A23B3D2040026DDF7 /* SceneDelegate.swift */; };
-		48B60D5D23B3D2040026DDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B60D5C23B3D2040026DDF7 /* ViewController.swift */; };
+		48B60D5D23B3D2040026DDF7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B60D5C23B3D2040026DDF7 /* LoginController.swift */; };
 		48B60D6023B3D2040026DDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B60D5E23B3D2040026DDF7 /* Main.storyboard */; };
 		48B60D6223B3D2070026DDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B60D6123B3D2070026DDF7 /* Assets.xcassets */; };
 		48B60D6523B3D2070026DDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B60D6323B3D2070026DDF7 /* LaunchScreen.storyboard */; };
 		48D0194A23B3DB7B00301FFE /* OutlookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0194923B3DB7B00301FFE /* OutlookService.swift */; };
+		48D0195523B3EEE900301FFE /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195423B3EEE900301FFE /* Mail.swift */; };
+		48D0195723B3EF7600301FFE /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195623B3EF7600301FFE /* CurrentUser.swift */; };
+		48D0195B23B4010D00301FFE /* MailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195A23B4010D00301FFE /* MailListViewController.swift */; };
+		48D0195E23B4013100301FFE /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195D23B4013100301FFE /* MailCell.swift */; };
 		720307515FB31A76FAAA5724 /* Pods_Outlook_oauth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6074FB3E422420491EF36AC /* Pods_Outlook_oauth2.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +25,16 @@
 		48B60D5523B3D2040026DDF7 /* Outlook-oauth2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outlook-oauth2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B60D5823B3D2040026DDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B60D5A23B3D2040026DDF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48B60D5C23B3D2040026DDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48B60D5C23B3D2040026DDF7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		48B60D5F23B3D2040026DDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B60D6123B3D2070026DDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B60D6423B3D2070026DDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B60D6623B3D2070026DDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48D0194923B3DB7B00301FFE /* OutlookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlookService.swift; sourceTree = "<group>"; };
+		48D0195423B3EEE900301FFE /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		48D0195623B3EF7600301FFE /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		48D0195A23B4010D00301FFE /* MailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailListViewController.swift; sourceTree = "<group>"; };
+		48D0195D23B4013100301FFE /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
 		5F2B1D567DDAD557D80DC60F /* Pods-Outlook-oauth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outlook-oauth2.release.xcconfig"; path = "Target Support Files/Pods-Outlook-oauth2/Pods-Outlook-oauth2.release.xcconfig"; sourceTree = "<group>"; };
 		77EA7FC648C08FC94B099EBF /* Pods-Outlook-oauth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outlook-oauth2.debug.xcconfig"; path = "Target Support Files/Pods-Outlook-oauth2/Pods-Outlook-oauth2.debug.xcconfig"; sourceTree = "<group>"; };
 		92929021930D2975E203A593 /* Pods-RxSwift-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-MVVM/Pods-RxSwift-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,12 +83,12 @@
 		48B60D5723B3D2040026DDF7 /* Outlook-oauth2 */ = {
 			isa = PBXGroup;
 			children = (
-				48B60D6623B3D2070026DDF7 /* Info.plist */,
-				48B60D6323B3D2070026DDF7 /* LaunchScreen.storyboard */,
-				48B60D7123B3D26D0026DDF7 /* Storyboards */,
 				48B60D7023B3D2590026DDF7 /* SupportFiles */,
+				48B60D7123B3D26D0026DDF7 /* Storyboards */,
 				48B60D6F23B3D24E0026DDF7 /* Service */,
-				48B60D7223B3D2910026DDF7 /* Controller */,
+				48D0194E23B3ECBF00301FFE /* Model */,
+				48D0195323B3EE8600301FFE /* View */,
+				48D0194F23B3ECC700301FFE /* ViewModel */,
 			);
 			path = "Outlook-oauth2";
 			sourceTree = "<group>";
@@ -96,6 +104,8 @@
 		48B60D7023B3D2590026DDF7 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				48B60D6623B3D2070026DDF7 /* Info.plist */,
+				48B60D6323B3D2070026DDF7 /* LaunchScreen.storyboard */,
 				48B60D6123B3D2070026DDF7 /* Assets.xcassets */,
 				48B60D5823B3D2040026DDF7 /* AppDelegate.swift */,
 				48B60D5A23B3D2040026DDF7 /* SceneDelegate.swift */,
@@ -114,9 +124,59 @@
 		48B60D7223B3D2910026DDF7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				48B60D5C23B3D2040026DDF7 /* ViewController.swift */,
+				48D0195923B400FD00301FFE /* Mail */,
+				48D0195823B400F000301FFE /* Login */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		48D0194E23B3ECBF00301FFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48D0195423B3EEE900301FFE /* Mail.swift */,
+				48D0195623B3EF7600301FFE /* CurrentUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48D0194F23B3ECC700301FFE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48D0195323B3EE8600301FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48B60D7223B3D2910026DDF7 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48D0195823B400F000301FFE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				48B60D5C23B3D2040026DDF7 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		48D0195923B400FD00301FFE /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				48D0195A23B4010D00301FFE /* MailListViewController.swift */,
+				48D0195C23B4011C00301FFE /* Cell */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		48D0195C23B4011C00301FFE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48D0195D23B4013100301FFE /* MailCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		989A9DFBD55FDE1901E2ACBF /* Pods */ = {
@@ -245,9 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B60D5D23B3D2040026DDF7 /* ViewController.swift in Sources */,
+				48D0195523B3EEE900301FFE /* Mail.swift in Sources */,
+				48B60D5D23B3D2040026DDF7 /* LoginController.swift in Sources */,
 				48D0194A23B3DB7B00301FFE /* OutlookService.swift in Sources */,
 				48B60D5923B3D2040026DDF7 /* AppDelegate.swift in Sources */,
+				48D0195E23B4013100301FFE /* MailCell.swift in Sources */,
+				48D0195723B3EF7600301FFE /* CurrentUser.swift in Sources */,
+				48D0195B23B4010D00301FFE /* MailListViewController.swift in Sources */,
 				48B60D5B23B3D2040026DDF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YH2HY6PT8;
-				INFOPLIST_FILE = "$(SRCROOT)/Outlook-oauth2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Outlook-oauth2/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8YH2HY6PT8;
-				INFOPLIST_FILE = "$(SRCROOT)/Outlook-oauth2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Outlook-oauth2/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
