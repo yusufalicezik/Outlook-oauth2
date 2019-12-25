@@ -1,0 +1,26 @@
+PODS:
+  - p2.OAuth2 (5.0.0)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - p2.OAuth2
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - p2.OAuth2
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  p2.OAuth2: 5d203b46c2857b4bbcca3e521089959e7b3b5a5c
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 5b8dde6ed989545a746481f09e70328881105b39
+
+COCOAPODS: 1.8.4
