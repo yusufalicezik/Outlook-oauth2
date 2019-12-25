@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        if OutlookService.shared().isLoggedIn{
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MailListVC") as? MailListViewController
+            window?.rootViewController = vc!
+            window?.makeKeyAndVisible()
+        }
         // Override point for customization after application launch.
         return true
     }

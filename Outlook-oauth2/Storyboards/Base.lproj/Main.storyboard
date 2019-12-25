@@ -173,10 +173,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="wtf-Ec-rTG" id="ugQ-Rd-ZwQ"/>
-                                    <outlet property="delegate" destination="wtf-Ec-rTG" id="EdI-oP-C7c"/>
-                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqK-b9-keH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>

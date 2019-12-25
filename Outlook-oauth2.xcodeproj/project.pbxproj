@@ -18,6 +18,7 @@
 		48D0195723B3EF7600301FFE /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195623B3EF7600301FFE /* CurrentUser.swift */; };
 		48D0195B23B4010D00301FFE /* MailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195A23B4010D00301FFE /* MailListViewController.swift */; };
 		48D0195E23B4013100301FFE /* MailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195D23B4013100301FFE /* MailCell.swift */; };
+		48D0196023B41B0800301FFE /* MailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0195F23B41B0800301FFE /* MailListViewModel.swift */; };
 		720307515FB31A76FAAA5724 /* Pods_Outlook_oauth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6074FB3E422420491EF36AC /* Pods_Outlook_oauth2.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		48D0195623B3EF7600301FFE /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		48D0195A23B4010D00301FFE /* MailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailListViewController.swift; sourceTree = "<group>"; };
 		48D0195D23B4013100301FFE /* MailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCell.swift; sourceTree = "<group>"; };
+		48D0195F23B41B0800301FFE /* MailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailListViewModel.swift; sourceTree = "<group>"; };
 		5F2B1D567DDAD557D80DC60F /* Pods-Outlook-oauth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outlook-oauth2.release.xcconfig"; path = "Target Support Files/Pods-Outlook-oauth2/Pods-Outlook-oauth2.release.xcconfig"; sourceTree = "<group>"; };
 		77EA7FC648C08FC94B099EBF /* Pods-Outlook-oauth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outlook-oauth2.debug.xcconfig"; path = "Target Support Files/Pods-Outlook-oauth2/Pods-Outlook-oauth2.debug.xcconfig"; sourceTree = "<group>"; };
 		92929021930D2975E203A593 /* Pods-RxSwift-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-MVVM/Pods-RxSwift-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		48D0194F23B3ECC700301FFE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				48D0195F23B41B0800301FFE /* MailListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				48D0195723B3EF7600301FFE /* CurrentUser.swift in Sources */,
 				48D0195B23B4010D00301FFE /* MailListViewController.swift in Sources */,
 				48B60D5B23B3D2040026DDF7 /* SceneDelegate.swift in Sources */,
+				48D0196023B41B0800301FFE /* MailListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
