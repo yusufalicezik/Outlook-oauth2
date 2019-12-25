@@ -8,38 +8,24 @@
 
 import UIKit
 import Letters
+import RxSwift
+import RxCocoa
 
 class MailListViewController: UIViewController {
 
-    var mailList = [Mail]()
+    var mailListViewModel = MailListViewModel()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getMails()
+        self.setupBindings()
         // Do any additional setup after loading the view.
     }
     
-    private func getMails(){
-        OutlookService.shared().loadUserData { (mails) in
-            self.mailList = mails
-            self.tableView.reloadData()
+    private func setupBindings(){
+        //tableView.register(UINib(nibName: "MailCell", bundle: nil), forCellReuseIdentifier: "cell") //storyboard üzerinden verildi.
+       _ = mailListViewModel.mails.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: MailCell.self)){
+            (row, mail, cell) in
+            cell.mail = mail
         }
     }
-}
-extension MailListViewController:UITableViewDataSource, UITableViewDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mailList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MailCell
-        cell?.senderNameLabel.text = mailList[indexPath.row].fromUser!.emailAddress!.name!
-        cell?.senderEmailLabel.text = mailList[indexPath.row].fromUser!.emailAddress!.address!
-        cell?.subjectLabel.text = mailList[indexPath.row].subject!
-        cell?.mailImageView.setImage(string: cell?.senderNameLabel.text!, color: #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 0.7215325342), circular: true, textAttributes: [NSAttributedString.Key.font: UIFont(name: "Arial", size: 30.0)!, NSAttributedString.Key.foregroundColor:#colorLiteral(red: 0.1900072992, green: 0.3403339386, blue: 0.4397745132, alpha: 1)])
-
-        return cell!
-    }
-    
-    
 }
