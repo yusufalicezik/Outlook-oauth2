@@ -121,7 +121,7 @@
                                                             <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Yusuf Ali Çezik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qib-Dx-dHR">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="245" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" text="Yusuf Ali Çezik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qib-Dx-dHR">
                                                             <rect key="frame" x="85" y="5" width="238" height="22"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,6 +139,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="VFQ-xl-Afe" secondAttribute="trailing" constant="5" id="8Di-G3-u13"/>
                                                         <constraint firstAttribute="trailing" secondItem="PQI-YS-ACO" secondAttribute="trailing" constant="10" id="8Sg-5P-5Zr"/>
                                                         <constraint firstItem="icx-sB-BTr" firstAttribute="top" secondItem="8w3-f6-izh" secondAttribute="top" constant="5" id="ETP-YC-eba"/>
+                                                        <constraint firstItem="PQI-YS-ACO" firstAttribute="top" secondItem="qib-Dx-dHR" secondAttribute="top" id="GY3-8A-dug"/>
                                                         <constraint firstAttribute="trailing" secondItem="zqK-gZ-0rg" secondAttribute="trailing" constant="5" id="Oyv-J2-YTx"/>
                                                         <constraint firstAttribute="bottom" secondItem="icx-sB-BTr" secondAttribute="bottom" constant="5" id="Rgk-kw-ka6"/>
                                                         <constraint firstItem="VFQ-xl-Afe" firstAttribute="bottom" secondItem="icx-sB-BTr" secondAttribute="bottom" id="U8r-tq-Vtx"/>
@@ -148,7 +149,6 @@
                                                         <constraint firstItem="PQI-YS-ACO" firstAttribute="leading" secondItem="qib-Dx-dHR" secondAttribute="trailing" constant="5" id="e7Z-3m-heA"/>
                                                         <constraint firstItem="VFQ-xl-Afe" firstAttribute="leading" secondItem="icx-sB-BTr" secondAttribute="trailing" constant="5" id="eVv-Ay-LC1"/>
                                                         <constraint firstItem="qib-Dx-dHR" firstAttribute="top" secondItem="icx-sB-BTr" secondAttribute="top" id="fBP-X6-3mW"/>
-                                                        <constraint firstItem="PQI-YS-ACO" firstAttribute="top" secondItem="8w3-f6-izh" secondAttribute="top" constant="5" id="hcd-Qh-Upe"/>
                                                         <constraint firstItem="icx-sB-BTr" firstAttribute="leading" secondItem="8w3-f6-izh" secondAttribute="leading" constant="10" id="xS2-ze-Ulb"/>
                                                     </constraints>
                                                 </view>
