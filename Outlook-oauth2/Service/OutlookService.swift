@@ -13,6 +13,7 @@ import SwiftyJSON
 class OutlookService {
     
     private var userEmail: String
+    private var skipCount = 0
     
     // Configure the OAuth2 framework for Azure
     private static let oauth2Settings = [
@@ -144,8 +145,11 @@ class OutlookService {
         let apiParams = [
             "$select": "subject,receivedDateTime,from",
             "$orderby": "receivedDateTime DESC",
-            "$top": "10"
+            "$top": "10",
+            "$skip": String(self.skipCount)
         ]
+        
+        self.skipCount+=10 // for paging
 
         makeApiCall(api: "/v1.0/me/mailfolders/inbox/messages", params: apiParams) {
             result in
